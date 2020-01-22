@@ -4,8 +4,8 @@ Layout
 </template>
 
 <page-query>
-query Post($path: String!) {
-    post: post(path: $path) {
+query ($path: String!) {
+    post(path: $path) {
         title
         content
     }
